@@ -24,6 +24,6 @@
     "build:generate-index-yaml": "node ./bin/resolve.js",
     "start": "npm run build && npm run run-server",
     "run-server": "node ./node_modules/live-server/live-server.js --watch=public/ --port=8005 --open=public/index.html",
-    "watch-docs": "watch \"npm run build:generate-index-yaml\" docs/",
+    "watch-docs": "watch \"npm run build:generate-index-yaml\" docs/"
   }
 }
