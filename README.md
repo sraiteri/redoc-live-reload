@@ -1,5 +1,28 @@
 # Redoc OpenAPI Documentation w/ Live Reloading
 
+## Overview
+
+This is skeleton project created from a need to work extensively with OpenAPI v2.0 & ReDoc. While the specification itself is fantastic to work with, there are a number of practical challenges faced when the number of operations and definitions begin to quickly grow - especially when wrapping the delivery process in ReDoc:
+
+* My YAML definition has grown beyond 2k lines. Can I work with 'fragments' YAML in a well defined folder structure instead?
+** What if I also need to support multiple active API definition contributors? One file becomes a nightmare very quickly.
+* If I work in 'fragmented' YAML, how can I combine all files back together into an *uber* YAML that ReDoc can understand?
+** I need the output to be a valid document in its entirety, otherwise it will not render in ReDoc anymore.
+* How can I develop locally so that changes are reflected quickly - i.e. without stopping & starting npm/yarn processes?
+** I need changes to be immediately reflected in the browser, so I have fast feedback & don't spend all my time double checking schema semantics.
+
+### Uses popular libraries ###
+
+* redoc - https://github.com/Rebilly/ReDoc
+* live-server - https://github.com/tapio/live-server
+* lson-refs - https://github.com/whitlockjc/json-refs
+
+## Live Demo ##
+
+Below is an example of the skeleton project in action. The GIF includes making a change, and having it update on the fly in the browser:
+
+![Alt text](/screenshots/demo.gif?raw=true "Redoc Live Reload Example")
+
 ## Project Structure
 This project layout is structured as below:
 
@@ -46,9 +69,3 @@ By default, hot loading is not enabled. To activate this:
 1. Open an additional terminal window/tab and run `yarn run watch-docs`. This is in addition to the `yarn run start` command above still running in another terminal.
 2. Make changes to anything within the **docs** folder
 3. Observe the web browser automatically reloads itself and reflects the new changes. We are using the *watch* npm package for this, so it will take ~5 seconds to reflect the changes.
-
-## Live Demo ##
-
-Below is an example of the project in action. Includes making a change, and having it update on the fly:
-
-![Alt text](/screenshots/demo.gif?raw=true "Redoc Live Reload Example")
