@@ -43,6 +43,6 @@ This project layout is structured as below:
 
 By default, hot loading is not enabled. To activate this:
 
-1. Open an additional terminal window/tab and run `npm run watch-docs`. This is in addition to the `npm run start` command above still running in another terminal.
+1. Open an additional terminal window/tab and run `yarn run watch-docs`. This is in addition to the `yarn run start` command above still running in another terminal.
 2. Make changes to anything within the **docs** folder
 3. Observe the web browser automatically reloads itself and reflects the new changes. We are using the *watch* npm package for this, so it will take ~5 seconds to reflect the changes.
