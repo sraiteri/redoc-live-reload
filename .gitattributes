@@ -1,3 +1,5 @@
+*.yaml linguist-language=YAML
+
 public/* linguist-vendored
 screenshots/* linguist-vendored
 zip/* linguist-vendored
