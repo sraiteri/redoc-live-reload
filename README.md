@@ -5,11 +5,11 @@
 This is skeleton project created from a need to work extensively with OpenAPI v2.0 & ReDoc. While the specification itself is fantastic to work with, there are a number of practical challenges faced when the number of operations and definitions begin to quickly grow - especially when wrapping the delivery process in ReDoc:
 
 * My YAML definition has grown beyond 2k lines. Can I work with 'fragments' YAML in a well defined folder structure instead?
-** What if I also need to support multiple active API definition contributors? One file becomes a nightmare very quickly.
+  * What if I also need to support multiple active API definition contributors? One file becomes a nightmare very quickly.
 * If I work in 'fragmented' YAML, how can I combine all files back together into an *uber* YAML that ReDoc can understand?
-** I need the output to be a valid document in its entirety, otherwise it will not render in ReDoc anymore.
+  * I need the output to be a valid document in its entirety, otherwise it will not render in ReDoc anymore.
 * How can I develop locally so that changes are reflected quickly - i.e. without stopping & starting npm/yarn processes?
-** I need changes to be immediately reflected in the browser, so I have fast feedback & don't spend all my time double checking schema semantics.
+  * I need changes to be immediately reflected in the browser, so I have fast feedback & don't spend all my time double checking schema semantics.
 
 ### Uses popular libraries ###
 
