@@ -17,11 +17,19 @@ This is skeleton project created from a need to work extensively with OpenAPI v2
 * live-server - https://github.com/tapio/live-server
 * json-refs - https://github.com/whitlockjc/json-refs
 
-## Live Demo ##
+## Demo ##
+
+### GIF Example ###
 
 Below is an example of the skeleton project in action. The GIF includes making a change, and having it update on the fly in the browser:
 
 ![Alt text](/screenshots/demo.gif?raw=true "Redoc Live Reload Example")
+
+### Sandbox ###
+
+The sample documentation generated from this project has been hosted in a sandbox environment:
+
+[Sandbox](https://s3-ap-southeast-2.amazonaws.com/redoc-live-reload-sample/index.html)
 
 ## Project Structure
 This project layout is structured as below:
