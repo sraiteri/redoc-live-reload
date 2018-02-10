@@ -1,0 +1,9 @@
+# Pets
+Pet:
+  $ref: ./pets/Pet.yaml
+NewPet:
+  $ref: ./pets/NewPet.yaml
+
+# Errors
+Error:
+  $ref: ./errors/Error.yaml

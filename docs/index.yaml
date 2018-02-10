@@ -1,0 +1,20 @@
+swagger: '2.0'
+info:
+  $ref: ./docs/info/index.yaml
+host: 'petstore.domain'
+basePath: /api
+tags:
+  - name: Pet
+    description: |
+      Pet related API functions
+      - Get all pets
+      - Add a new pet
+      - Update a pet
+      - Delete a pet
+schemes:
+  - http
+  - https
+paths:
+  $ref: ./docs/paths/index.yaml
+definitions:
+  $ref: ./docs/definitions/index.yaml

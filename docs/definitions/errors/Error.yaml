@@ -1,0 +1,13 @@
+type: object
+required:
+  - code
+  - message
+properties:
+  code:
+    type: integer
+    format: int32
+  message:
+    type: string
+example:
+  code: 500
+  message: An unexpected error was encountered

@@ -1,0 +1,31 @@
+{
+  "name": "swagger-redoc-live-reload-example",
+  "version": "1.0.0",
+  "description": "Swagger 2.0 documentation, with redoc 2.X and local live reloading capabilities",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@stash.int.corp.sun:2222/dbm/exp-api-mock-data.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "dependencies": {},
+  "devDependencies": {
+    "bestzip": "^1.1.4",
+    "copyfiles": "^1.2.0",
+    "json-refs": "^3.0.3",
+    "live-server": "^1.2.0",
+    "redoc": "^2.0.0-alpha.12",
+    "watch": "^1.0.2",
+    "yarn": "^1.3.2"
+  },
+  "scripts": {
+    "build": "npm run build:generate-index-yaml & npm run build:copy-redoc-standalone",
+    "build:copy-redoc-standalone": "copyfiles -f node_modules/redoc/bundles/redoc.standalone.js public/",
+    "build:generate-index-yaml": "node ./bin/resolve.js",
+    "start": "npm run build && npm run run-server",
+    "run-server": "node ./node_modules/live-server/live-server.js --watch=public/ --port=8005 --open=public/index.html",
+    "zip-docs": "bestzip zip/output.zip public/",
+    "watch-docs": "watch \"npm run build:generate-index-yaml\" docs/"
+  }
+}

@@ -1,0 +1,17 @@
+type: object
+allOf:
+  - $ref: '#/definitions/NewPet'
+  - required:
+    - id
+    properties:
+      id:
+        type: integer
+        format: int64
+properties:
+  id:
+    type: integer
+    format: int64
+example:
+  id: 1
+  name: Scruffy
+  tag: A38

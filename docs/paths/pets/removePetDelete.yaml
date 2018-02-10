@@ -1,0 +1,20 @@
+description: deletes a single pet based on the ID supplied
+operationId: deletePet
+consumes:
+  - application/json
+produces:
+  - application/json
+parameters:
+  - name: id
+    in: path
+    description: ID of pet to delete
+    required: true
+    type: integer
+    format: int64
+responses:
+  '204':
+    description: pet deleted
+  '500':
+    description: unexpected error
+    schema:
+      $ref: '#/definitions/Error'

@@ -1,0 +1,11 @@
+# Pets
+/pets:
+  get:
+    $ref: ./pets/findAllPetsGet.yaml
+  post:
+    $ref: ./pets/addNewPetPost.yaml
+/pets/{id}:
+  get:
+    $ref: ./pets/findPetGet.yaml
+  delete:
+    $ref: ./pets/removePetDelete.yaml

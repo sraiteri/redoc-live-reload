@@ -1,0 +1,23 @@
+description: Creates a new pet in the store. Duplicates are allowed
+operationId: addPet
+consumes:
+  - application/json
+produces:
+  - application/json
+parameters:
+  - name: pet
+    in: body
+    description: Pet to add to the store
+    required: true
+    schema:
+      $ref: '#/definitions/NewPet'
+responses:
+  '201':
+    description: pet response
+    schema:
+      $ref: '#/definitions/Pet'
+
+  '500':
+    description: unexpected error
+    schema:
+      $ref: '#/definitions/Error'
