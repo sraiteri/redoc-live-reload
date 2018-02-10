@@ -1,4 +1,6 @@
 description: Returns all pets from the system that the user has access to
+tags:
+  - Pets
 operationId: findPets
 consumes:
   - application/json

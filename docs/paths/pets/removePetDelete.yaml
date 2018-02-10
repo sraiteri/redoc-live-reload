@@ -1,4 +1,6 @@
 description: deletes a single pet based on the ID supplied
+tags:
+  - Pets
 operationId: deletePet
 consumes:
   - application/json

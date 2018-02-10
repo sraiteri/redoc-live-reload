@@ -3,8 +3,12 @@ info:
   $ref: ./docs/info/index.yaml
 host: 'petstore.domain'
 basePath: /api
+x-tagGroups:
+  - name: Pets API
+    tags:
+      - Pets
 tags:
-  - name: Pet
+  - name: Pets
     description: |
       Pet related API functions
       - Get all pets
