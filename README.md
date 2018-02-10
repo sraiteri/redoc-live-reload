@@ -39,10 +39,6 @@ This project layout is structured as below:
 2. Run `yarn run start` from a terminal
 3. Navigate to http://localhost:8005 to view the live documentation in a browser.
 
-## Live Demo ##
-
-![Alt text](/screenshots/demo.gif?raw=true "Redoc Live Reload Example")
-
 ### Hot reloading after *docs* folder content changes
 
 By default, hot loading is not enabled. To activate this:
@@ -50,3 +46,9 @@ By default, hot loading is not enabled. To activate this:
 1. Open an additional terminal window/tab and run `yarn run watch-docs`. This is in addition to the `yarn run start` command above still running in another terminal.
 2. Make changes to anything within the **docs** folder
 3. Observe the web browser automatically reloads itself and reflects the new changes. We are using the *watch* npm package for this, so it will take ~5 seconds to reflect the changes.
+
+## Live Demo ##
+
+Below is an example of the project in action. Includes making a change, and having it update on the fly:
+
+![Alt text](/screenshots/demo.gif?raw=true "Redoc Live Reload Example")
