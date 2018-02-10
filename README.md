@@ -39,6 +39,10 @@ This project layout is structured as below:
 2. Run `yarn run start` from a terminal
 3. Navigate to http://localhost:8005 to view the live documentation in a browser.
 
+## Live Demo ##
+
+![Alt text](/screenshots/demo.gif?raw=true "Redoc Live Reload Example")
+
 ### Hot reloading after *docs* folder content changes
 
 By default, hot loading is not enabled. To activate this:
