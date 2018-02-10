@@ -1,3 +1,4 @@
 node_modules/
+s3_upload/
 public/redoc.standalone.js
 public/output.yaml
